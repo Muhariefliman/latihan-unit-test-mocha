@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "coverage": "nyc --reporter=lcov --reporter=text-summary npm run test"
+    "test": "mocha \"test/**/*_test.js\" --timeout=5000 --exit",
+    "cover": "nyc _mocha \"test/**/*_test.js\" --recursive --exit"
   },
   "keywords": [],
   "author": "",
